@@ -31,12 +31,12 @@ let groupToShow = "arbete";
 function showContacts(contactBook, groupToShow) {
   // Rör ej denna kod
 
-  console.log("Sorting by contact group:", groupToShow.toUpperCase());
+  console.log(groupToShow.toUpperCase(), "sortering:");
   // Loopar igenom alla kontakter och jämför grupp
   for (const contact of contactBook.contacts) {
     if (contact.group === groupToShow) {
       // här ska sträng med namn och tekefonnummer visas i form av string interpolatio
-      console.log(`Name: ${contact.name}, Phone: ${contact.phone}`);
+      console.log(`Namn: ${contact.name}, Telefon: ${contact.phone}`);
     }
   }
 }
